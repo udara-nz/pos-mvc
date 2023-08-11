@@ -68,7 +68,7 @@ public class CustomerController {
         return customerModels;
     }
 
-    public CustomerModel getCustomerModel(String custId) throws SQLException {
+    public CustomerModel getCustomer(String custId) throws SQLException {
         Connection connection = DBConnection.getInstance().getConnection();
 
         String query = "Select * FROM Customer WHERE CustID = ?";
